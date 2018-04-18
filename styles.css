@@ -1,0 +1,64 @@
+#background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/onepage.jpg);
+    position: absolute;
+    opacity: 0.5;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 35px 87px;
+    box-sizing: border-box;
+}   
+
+header h1{
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 14px;
+    font-size: 13px;
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    padding-top: 100px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 100px;
+    min-height: 400px;
+    align-items: center;
+}
+
+.banner div{
+    width: 400px;
+}
+
+.banner h2{
+    font-size: 28px;
+}
