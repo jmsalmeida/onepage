@@ -11,35 +11,49 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Auxiliares */
 header{
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    padding: 35px 87px;
+    padding: 35px 0;
     box-sizing: border-box;
-    /* align-items: center; */
+    align-items: center;
 }   
 
 header h1{
     margin: 0;
 }
 
-header a{
+nav.menu-desktop {
+    margin: 0 13px 14px 0;
+}
+
+nav.menu-desktop a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0 0 0 27.5px;
+    margin: 0 0 0 28px;
     font-size: 12px;
     letter-spacing: 1px;
+}
+
+header span {
+    font-size: 25px;
+    margin-right: 20px;
+    display: none;
+}
+
+nav.menu-mobile {
+    display: none;
 }
 
 header img{
     width: 30px;
     height: 30px;
-    /* margin-right: 10px; */
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 100px;
 }
 
 header div{
@@ -55,16 +69,103 @@ header div{
     display: flex;
     justify-content: flex-end;
     padding: 0 0 30px 185px;
-    min-height: 450px;
+    min-height: 640px;
     align-items: center;
 }
 
 .banner div{
     width: 50%;
+    margin-top: 30px;
+    margin-right: -30px;
 }
 
 .banner h2{
     font-size: 35px;
     font-weight: bolder;
-    
+    margin-left: -8px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
+
+.banner p {
+    font-size: 15px;
+    color: #898B8A;
+    margin-right: 68px;
+}
+
+.banner button{
+    width: 180px;
+    height: 54px;
+    margin-top: 41px;
+    padding-left: 6px;
+    font-weight: bolder;
+    background-color: #10C9C3;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    header h1 {
+        display: none;
+    }
+
+    header img{
+        margin: 10px 10px 10px 20px;
+    }
+   
+    nav.menu-desktop {
+        display: none;
+    }
+
+    header span {
+        display: inline;
+    }
+
+    nav.menu-mobile {
+        position: absolute;
+        top: 100px;
+        display: block;
+        background-color: white;
+        width: 100%;
+        transition: 0.5s;
+        transform: translateY(-130%);
+    }
+    
+    nav.menu-mobile a{
+        display: block;
+        line-height: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px dotted black;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner div {
+        width: 100%;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .banner h2 {
+        margin: 0 auto;
+        /* margin-top: 100px; */
+        font-size: 20px;
+        
+    }
+
+    .banner p {
+        margin: 50px 0 0 0;
+    }
+
+} 
