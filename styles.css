@@ -12,6 +12,11 @@ body{
 }
 
 /* Auxiliares */
+.titleH2 {
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,7 @@ header{
 
 header h1{
     margin: 0;
+    font-size: 20px;
 }
 
 nav.menu-desktop {
@@ -104,7 +110,48 @@ header div{
     color: white;
 }
 
-@media screen and (max-width: 768px){
+.about{
+    text-align: center;
+    padding: 70px 0;
+}
+
+
+.about p{
+    margin: 0 380px;
+    font-size: 14px;
+    color: #898B8A;
+    line-height: 25px;
+    
+}
+
+
+.about img{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.skills {
+    background-image: url(images/skills.jpg);
+    padding: 100px 0;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 500px; 
+}
+
+.skills div:nth-child(1) {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+div::nth-child(1) .percent-bar {
+    border-bottom: 3px solid #10C9C3;
+    width: 75%;
+}
+
+
+
+@media screen and (max-width: 990px){
     header h1 {
         display: none;
     }
@@ -166,6 +213,10 @@ header div{
 
     .banner p {
         margin: 50px 0 0 0;
+    }
+
+    .about p{
+        margin: 0 auto;
     }
 
 } 
